@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title> Jogue Dominó !! </title> 
+    </head>
+  
+
+<body onload="getRanking()">    
+
+<div class =" logotipo">
+<h1>Dominó Online</h1>
+</div>
+
+
+  <a href="https://pt.wikipedia.org/wiki/Domin%C3%B3" target="_blank">
+   <div class="help"> 
+     Wikipédia Dominó 
+      </div>
+        </a> 
+
+<div id="leave">
+	      Logout 
+	              </div> 
+
+<div id= "loginIn">
+                   </div>
+
+<canvas id="boneco"></canvas>  
+
+<div id="cont">
+    <div id="pag">
+        <a href="#popup">Login</a><p>
+    <div id="popup">
+        <a href="#pag">Fechar</a><p>
+        <div id="formulario"> 
+        
+        <form action=registar method=post>
+           Nome: &nbsp; &nbsp;  &nbsp; <input required type="text" placeholder="Username" id="input_name" pattern="[A-Za-z0-9]{6,15}"/> <br>
+           Password: <input required type="password" placeholder="Password" id="input_password" pattern="[A-Za-z0-9]{6,15}"/><br>
+           <input type=reset value="Reset">
+           <input type="button" value="Login" id="login_button"/><br>  
+       </form>
+    
+    </div>
+
+        </div>
+    </div>  
+</div>
+
+
+
+<div class ="conf">
+
+
+<br> 
+
+<div class="opcao1">
+<select id="escolher">
+	<optgroup label="Jogador">
+    <option value="Computer">Computador</option>
+    <option value="Humano" >Humano</option>
+  </optgroup> 
+</select>
+</div>
+<br>
+
+
+<br>
+<div id="informação"> 
+<p>Necessita fazer login para jogar</p>
+</div>
+
+<div class="jogar">
+  <button type="button" id="go">Jogar!</button>
+  <button type="button" id="leave_btn">Abandonar o jogo</button>     
+</div>
+</div>
+
+
+
+<div class="modelo">
+      
+      <span class="fechar">&times;</span>
+      
+      <div class="regras">
+        <h1>Regras</h1>
+        <p>Quem tem a peça de valor mais alto inicia o jogo</p>
+        <p>Se um jogador não tiver peça para jogar tem ir ao monte</p>
+        <p>Vai retirando peças do monte até que o possa jogar</p>
+        <p>Não havendo peças no monte o jogador pode passar a sua vez.</p>
+        <p>Só com o monte vazio é que se pode passar</p>
+        <p>Jogo termina: um jogador ficar sem peças 
+                         o jogo ficar fechado e nenhum jogador pode jogar
+       
+       <p>Jogo está fechado: mesmo valor em ambas as estremidades e esse valor aparecer nas peças 7 vezes  
+          Ganha o jogador com menor número de pontos em mão 
+         (Pontos são soma dos pares de valores das suas peças).</p>
+
+     
+     </div>
+     
+    <div class="score">
+        <h1>Ranking</h1>
+        <table id="rankingBoard" class="table">
+        <tr>
+          <td><h3 class = "centerTable">Username</h3></td>
+          <td><h3 class = "centerTable">Vitorias</h3></td>
+          <td><h3 class = "centerTable">Jogos</h3></td>
+        </tr>
+      </table>
+      </div>
+
+</div>
+
+
+<nav>
+     <ul>
+          <li><a id="regras" href="#">Regras</a></li>
+          <li><a id="score"  href="#">Classificações</a></li>
+     </ul>
+
+</nav>
+
+
+<div class="mensagens">
+
+<div class="vitoria">
+ <p>Vitória !!</p>
+</div>  
+
+<div class="erro">
+ <p>Não é possível !! </p>
+</div>    
+
+<div class="perdeu">
+ <p>Perdeu!! </p>
+</div>    
+
+<div class ="erro2">
+ <p>Não encaixa na linha de jogo </p>
+</div>
+
+<div class ="encaixa">
+ <p>A peça selecionada encaixa em ambos os lados </p>
+</div>    
+
+</div>
+
+
+<div class="adversario "> <div id="opponentHand">
+
+</div>
+
+</div>
+      
+<div class="area">
+<div class="desenho">
+<div id="board">
+</div> 
+</div>
+<div class="boasvidas"> <h1> Bem vindo ao Jogo Dominó  </h1> </div>
+ <div class="monte">
+  <br>       DECK   </div>
+</div>
+
+
+
+<div id="desistir">
+  Desistir
+ </div>
+
+<div class="pass">
+       Passar 
+</div>
+
+<div class="user">
+<div id="hand" >
+</div>
+
+</div>
+
+
+
+
+<div id="stock">
+
+</div>
+
+<div class="reniciar2">
+       Reniciar 
+</div>
+
+<div class="jogo"></div>
+
+<div class="reniciar">
+	    <span class="fechar">&times;</span>
+        <p>Quere voltar a jogar?</p><br>
+        <a href="#" id="restart">Reniciar </a>
+</div>
+
+
+
+<script src="script.js"></script>
+<script src="script_server.js"></script>
+
+</body>
+
+
+</html>
