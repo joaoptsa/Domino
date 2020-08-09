@@ -2,7 +2,8 @@ Trabalho: Tecnologias Web
 
 Multiplayer Dominó
 
-Exec: node index.js
+Execute: node index.js
+
       
 
 
