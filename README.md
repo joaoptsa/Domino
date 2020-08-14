@@ -1,12 +1,14 @@
 Trabalho: Tecnologias Web
 
-Multiplayer Dominó
+Multiplayer Game Dominó
 
 Required: Node.js
 
-Execute in terminal : node index.js
+First
+Execute in terminal: node index.js
 
-Open the file  index.html
+Open the file:  index.html
+
 
 
       
