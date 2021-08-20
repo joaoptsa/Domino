@@ -4,7 +4,6 @@ Multiplayer Game Dominó
 
 Required: Node.js
 
-First
 
 Execute in terminal: node index.js
 
