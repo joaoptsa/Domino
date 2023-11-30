@@ -1,12 +1,12 @@
-Tecnologias Web - Multiplayer Game Dominó
+<h2>Tecnologias Web - Multiplayer Game Dominó</h2>
 
-Este é um projeto de jogo de dominó multiplayer desenvolvido usando Node.js.
-
-
-Requisitos: Node.js instalado
+Este é um projeto de um jogo de dominó desenvolvido usando Node.js e javascript.
 
 
-Executando o Jogo: 
+Requisitos:<br> Node.js 
+
+
+Executando o Jogo:<br> 
 
 No terminal, execute o seguinte comando: node index.js
 Abra o arquivo index.html duas vezes no navegador e teste o jogo.
