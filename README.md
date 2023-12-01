@@ -1,6 +1,6 @@
 <h2>Tecnologias Web - Multiplayer Game Dominó</h2>
 
-Este é um projeto de um jogo de dominó desenvolvido usando Node.js e javascript.
+Este é um projeto de um jogo de dominó 
 
 
 Requisitos:<br> Node.js 
